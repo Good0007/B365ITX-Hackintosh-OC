@@ -12,7 +12,7 @@
 - CPU风扇：AR11 银欣 
 
 ### 正常功能
-机型使用 iMAC 19,1 开启了核显加速
+机型使用 iMAC 19,1 开启了核显加速，目前已99%完美
 - 无线网卡：ok
 - 蓝牙：ok
 - R9显卡：ok
@@ -23,8 +23,8 @@
 
 ### 安装和问题参考
 
-可以用小兵最新的10.15.1 镜像进行安装
-
+可以用小兵最新的10.15.1 镜像进行安装，OC的配置文件编辑目前还没有clover智能，设置开机选中mac需要使用LogoutHook模拟nvram，然后在 偏好设置->启动磁盘 设置默认启动盘，具体操作参考xjn的博客。
+ 
 镜像下载：[黑果小兵博客镜像地址](https://blog.daliansky.net/macOS-Catalina-10.15.1-19B88-Release-version-with-Clover-5098-original-image-Double-EFI-Version.html "黑果小兵10.15.1镜像")
 
 常见问题：[安装常见问题](https://blog.daliansky.net/Common-problems-and-solutions-in-macOS-Catalina-10.15-installation.html "安装常见问题")
