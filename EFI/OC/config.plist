@@ -8,14 +8,6 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>SSDT-DTGP</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-DTGP.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SSDT-PM</string>
 				<key>Enabled</key>
 				<true/>
@@ -32,14 +24,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Plugintype-one</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>Plugintype-one.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>SSDT-RTC_Y-AWAC_N</string>
 				<key>Enabled</key>
 				<true/>
@@ -53,6 +37,30 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-no-EC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xcpm</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>plug-xcpm.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-ARTC</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-ARTC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-GPRW</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-GPRW.aml</string>
 			</dict>
 		</array>
 		<key>Block</key>
@@ -183,19 +191,7 @@
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>BwCbPg==</data>
-				<key>AAPL,slot-name</key>
-				<string>Internal</string>
-				<key>device-id</key>
-				<data>mz4AAA==</data>
-				<key>device_type</key>
-				<string>Display controller</string>
-				<key>framebuffer-unifiedmem</key>
-				<data>AAAAgA==</data>
-				<key>hda-gfx</key>
-				<string>onboard-1</string>
-				<key>model</key>
-				<string>Intel UHD Graphics 630</string>
+				<data>AwCYPg==</data>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
@@ -550,9 +546,9 @@
 			<key>SystemProductName</key>
 			<string>iMac19,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02YK0FBJV3Q</string>
+			<string>C02ZJ7YCJV3Q</string>
 			<key>SystemUUID</key>
-			<string>0DEB02F7-78A8-4200-8843-B54266E343A0</string>
+			<string>0F7DC862-EE19-4CB0-8220-9D04E64A5262</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
