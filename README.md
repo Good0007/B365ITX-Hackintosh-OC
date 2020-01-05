@@ -1,4 +1,5 @@
 ## B365ITX-Hackintosh-OC 华擎B365ITX 黑苹果OC 配置
+[我的博客同步更新](https://www.chenweikang.top/?p=846 "左手代码右手诗")
 
 ### 主机配置
 - 机箱：某宝（魔神科技)xs1机箱
