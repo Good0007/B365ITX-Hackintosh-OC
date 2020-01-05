@@ -29,6 +29,7 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-RTC_Y-AWAC_N.aml</string>
+<<<<<<< HEAD
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -60,6 +61,39 @@
 				<key>Enabled</key>
 				<false/>
 				<key>Path</key>
+=======
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-no-EC</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-no-EC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>xcpm</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>plug-xcpm.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-ARTC</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-ARTC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>SSDT-GPRW</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+>>>>>>> 682161360cd6973e7600bab43ee0b453944000c3
 				<string>SSDT-GPRW.aml</string>
 			</dict>
 		</array>
@@ -190,6 +224,14 @@
 	<dict>
 		<key>Add</key>
 		<dict>
+<<<<<<< HEAD
+=======
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>AwCYPg==</data>
+			</dict>
+>>>>>>> 682161360cd6973e7600bab43ee0b453944000c3
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
 				<key>layout-id</key>
@@ -716,6 +758,7 @@
 			<key>SystemProductName</key>
 			<string>iMac19,1</string>
 			<key>SystemSerialNumber</key>
+<<<<<<< HEAD
 			<string>C02ZRGZ1JV3Q</string>
 			<key>SystemUUID</key>
 			<string>9C0A07E3-C969-468E-A713-671451239DDC</string>
@@ -776,6 +819,11 @@
 			<string>9C0A07E3-C969-468E-A713-671451239DDC</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
+=======
+			<string>C02ZJ7YCJV3Q</string>
+			<key>SystemUUID</key>
+			<string>0F7DC862-EE19-4CB0-8220-9D04E64A5262</string>
+>>>>>>> 682161360cd6973e7600bab43ee0b453944000c3
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
