@@ -1,13 +1,15 @@
 ## B365ITX-Hackintosh-OC 华擎B365ITX 黑苹果OC 配置
 
+[我的博客同步更新](https://www.chenweikang.top/?p=846 "左手代码右手诗")
+
 ### 主机配置
 - 机箱：某宝（魔神科技)xs1机箱
 - 电源：台达 400w 1u 改猫扇 
-- 主板：华擎 B365I 
+- 主板：华擎 b365m-itx
 - CPU：9900t es
 - 显卡：R9 nano
-- 网卡：BCM94360CS2
-- 内存：DDR4 16g x 2
+- 网卡：DW1820A
+- 内存：玖合 DDR4 16g x 2
 - 硬盘：东芝RC500 
 - CPU风扇：AR11 银欣 
 
