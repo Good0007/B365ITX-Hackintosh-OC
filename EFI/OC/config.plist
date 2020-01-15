@@ -29,7 +29,6 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-RTC_Y-AWAC_N.aml</string>
-<<<<<<< HEAD
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -61,39 +60,6 @@
 				<key>Enabled</key>
 				<false/>
 				<key>Path</key>
-=======
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-no-EC</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-no-EC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>xcpm</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>plug-xcpm.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-ARTC</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-ARTC.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>SSDT-GPRW</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
->>>>>>> 682161360cd6973e7600bab43ee0b453944000c3
 				<string>SSDT-GPRW.aml</string>
 			</dict>
 		</array>
@@ -218,20 +184,14 @@
 			<false/>
 			<key>ShrinkMemoryMap</key>
 			<false/>
+			<key>SignalAppleOS</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
 	<dict>
 		<key>Add</key>
 		<dict>
-<<<<<<< HEAD
-=======
-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
-			<dict>
-				<key>AAPL,ig-platform-id</key>
-				<data>AwCYPg==</data>
-			</dict>
->>>>>>> 682161360cd6973e7600bab43ee0b453944000c3
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
 				<key>layout-id</key>
@@ -569,11 +529,15 @@
 			<false/>
 			<key>AppleXcpmExtraMsrs</key>
 			<false/>
+			<key>AppleXcpmForceBoost</key>
+			<false/>
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
 			<false/>
 			<key>ExternalDiskIcons</key>
+			<false/>
+			<key>IncreasePciBarSize</key>
 			<false/>
 			<key>LapicKernelPanic</key>
 			<false/>
@@ -608,9 +572,9 @@
 			<key>Resolution</key>
 			<string>3840x2160</string>
 			<key>ShowPicker</key>
-			<false/>
+			<true/>
 			<key>Timeout</key>
-			<integer>0</integer>
+			<integer>10</integer>
 			<key>UsePicker</key>
 			<true/>
 		</dict>
@@ -631,6 +595,10 @@
 		<dict>
 			<key>AllowNvramReset</key>
 			<true/>
+			<key>AllowSetDefault</key>
+			<true/>
+			<key>AuthRestart</key>
+			<false/>
 			<key>ExposeSensitiveData</key>
 			<integer>3</integer>
 			<key>HaltLevel</key>
@@ -702,6 +670,8 @@
 		</dict>
 		<key>LegacyEnable</key>
 		<true/>
+		<key>LegacyOverwrite</key>
+		<true/>
 		<key>LegacySchema</key>
 		<dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
@@ -743,14 +713,14 @@
 			<key>SystemProductName</key>
 			<string>iMac19,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02ZRGZ1JV3Q</string>
+			<string>C02YJHYTJV3Q</string>
 			<key>SystemUUID</key>
-			<string>9C0A07E3-C969-468E-A713-671451239DDC</string>
+			<string>298849CC-858A-47D3-B2A2-AD67C6AD2BD3</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
-			<string>C02948902QXLNV9CB</string>
+			<string>C02914306QXLNV9JA</string>
 			<key>ROM</key>
 			<string>D6E3272B8963</string>
 			<key>SpoofVendor</key>
@@ -758,10 +728,9 @@
 			<key>SystemProductName</key>
 			<string>iMac19,1</string>
 			<key>SystemSerialNumber</key>
-<<<<<<< HEAD
-			<string>C02ZRGZ1JV3Q</string>
+			<string>C02YJHYTJV3Q</string>
 			<key>SystemUUID</key>
-			<string>9C0A07E3-C969-468E-A713-671451239DDC</string>
+			<string>298849CC-858A-47D3-B2A2-AD67C6AD2BD3</string>
 		</dict>
 		<key>SMBIOS</key>
 		<dict>
@@ -780,7 +749,7 @@
 			<key>BoardProduct</key>
 			<string>Mac-AA95B1DDAB278B95</string>
 			<key>BoardSerialNumber</key>
-			<string>C02948902QXLNV9CB</string>
+			<string>C02914306QXLNV9JA</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
@@ -790,7 +759,7 @@
 			<key>ChassisManufacturer</key>
 			<string></string>
 			<key>ChassisSerialNumber</key>
-			<string>C02ZRGZ1JV3Q</string>
+			<string>C02YJHYTJV3Q</string>
 			<key>ChassisType</key>
 			<integer>9</integer>
 			<key>ChassisVersion</key>
@@ -814,16 +783,11 @@
 			<key>SystemSKUNumber</key>
 			<string>Mac-AA95B1DDAB278B95</string>
 			<key>SystemSerialNumber</key>
-			<string>C02ZRGZ1JV3Q</string>
+			<string>C02YJHYTJV3Q</string>
 			<key>SystemUUID</key>
-			<string>9C0A07E3-C969-468E-A713-671451239DDC</string>
+			<string>298849CC-858A-47D3-B2A2-AD67C6AD2BD3</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
-=======
-			<string>C02ZJ7YCJV3Q</string>
-			<key>SystemUUID</key>
-			<string>0F7DC862-EE19-4CB0-8220-9D04E64A5262</string>
->>>>>>> 682161360cd6973e7600bab43ee0b453944000c3
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -842,7 +806,6 @@
 		<array>
 			<string>ApfsDriverLoader.efi</string>
 			<string>FwRuntimeServices.efi</string>
-			<string>VirtualSmc.efi</string>
 			<string>HFSPlus.efi</string>
 			<string>MemoryAllocation.efi</string>
 		</array>
@@ -875,6 +838,8 @@
 			<false/>
 			<key>AppleKeyMap</key>
 			<false/>
+			<key>AppleSmcIo</key>
+			<true/>
 			<key>AppleUserInterfaceTheme</key>
 			<false/>
 			<key>ConsoleControl</key>
@@ -886,6 +851,8 @@
 			<key>FirmwareVolume</key>
 			<false/>
 			<key>HashServices</key>
+			<false/>
+			<key>OSInfo</key>
 			<false/>
 			<key>UnicodeCollation</key>
 			<false/>
