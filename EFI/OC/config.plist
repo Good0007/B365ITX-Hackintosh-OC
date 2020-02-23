@@ -122,6 +122,19 @@
 	<dict>
 		<key>Add</key>
 		<dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>AAPL,slot-name</key>
+				<string>WLAN</string>
+				<key>compatible</key>
+				<string>pci14e4,4353</string>
+				<key>device_type</key>
+				<string>Airport Extreme</string>
+				<key>model</key>
+				<string>DW1820A (BCM4350) 802.11ac Wireless</string>
+				<key>name</key>
+				<string>Airport</string>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
 				<key>layout-id</key>
@@ -323,9 +336,25 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
+				<string>AirportBrcmFixup.kext</string>
+				<key>Comment</key>
+				<string>dw1820a wifi</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirportBrcmFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
 				<string>BrcmFirmwareData.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>dw1820a</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -341,7 +370,7 @@
 				<key>BundlePath</key>
 				<string>BrcmPatchRAM2.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>dw1820a</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -357,7 +386,7 @@
 				<key>BundlePath</key>
 				<string>BrcmBluetoothInjector.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>dw1820a</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -489,16 +518,10 @@
 		<array/>
 		<key>Boot</key>
 		<dict>
-			<key>BuiltinTextRenderer</key>
-			<false/>
-			<key>ConsoleBehaviourOs</key>
-			<string>ForceText</string>
-			<key>ConsoleBehaviourUi</key>
-			<string>ForceText</string>
-			<key>ConsoleMode</key>
-			<string>Max</string>
 			<key>HibernateMode</key>
 			<string>None</string>
+			<key>HideAuxiliary</key>
+			<true/>
 			<key>HideSelf</key>
 			<false/>
 			<key>PickerAttributes</key>
@@ -507,16 +530,12 @@
 			<string>Builtin</string>
 			<key>PollAppleHotKeys</key>
 			<true/>
-			<key>Resolution</key>
-			<string>3840x2160</string>
 			<key>ShowPicker</key>
 			<true/>
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
 			<integer>15</integer>
-			<key>UsePicker</key>
-			<true/>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -543,10 +562,6 @@
 			<integer>6</integer>
 			<key>HaltLevel</key>
 			<integer>2147483648</integer>
-			<key>RequireSignature</key>
-			<false/>
-			<key>RequireVault</key>
-			<false/>
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>Vault</key>
@@ -557,6 +572,8 @@
 			<dict>
 				<key>Arguments</key>
 				<string></string>
+				<key>Auxiliary</key>
+				<false/>
 				<key>Comment</key>
 				<string>Not signed for security reasons</string>
 				<key>Enabled</key>
@@ -569,6 +586,8 @@
 			<dict>
 				<key>Arguments</key>
 				<string></string>
+				<key>Auxiliary</key>
+				<false/>
 				<key>Comment</key>
 				<string>Memory testing utility</string>
 				<key>Enabled</key>
@@ -586,13 +605,15 @@
 		<dict>
 			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
 			<dict>
+				<key>DefaultBackgroundColor</key>
+				<string>00000000</string>
 				<key>UIScale</key>
 				<data>AQ==</data>
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>silde=1  brcmfx-driver=#a</string>
+				<string>brcmfx-country=#a</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -655,14 +676,14 @@
 			<key>SystemProductName</key>
 			<string>iMac19,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02ZKSYMJV3Q</string>
+			<string>C02YX085JV3Q</string>
 			<key>SystemUUID</key>
-			<string>F0685B1E-6699-4737-BD14-2C64207C87E9</string>
+			<string>81BC5559-5EA5-4FE8-B107-00095EE76933</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
-			<string>C02942500GULNV9JA</string>
+			<string>C02926404J9LNV9UE</string>
 			<key>ROM</key>
 			<data>OjP1L+4a</data>
 			<key>SpoofVendor</key>
@@ -670,9 +691,9 @@
 			<key>SystemProductName</key>
 			<string>iMac19,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02ZKSYMJV3Q</string>
+			<string>C02YX085JV3Q</string>
 			<key>SystemUUID</key>
-			<string>F0685B1E-6699-4737-BD14-2C64207C87E9</string>
+			<string>81BC5559-5EA5-4FE8-B107-00095EE76933</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -683,7 +704,7 @@
 			<key>FirmwareFeaturesMask</key>
 			<data>f//f/wAAAAA=</data>
 			<key>MLB</key>
-			<string>C02942500GULNV9JA</string>
+			<string>C02926404J9LNV9UE</string>
 			<key>ROM</key>
 			<data>OjP1L+4a</data>
 		</dict>
@@ -704,7 +725,7 @@
 			<key>BoardProduct</key>
 			<string>Mac-AA95B1DDAB278B95</string>
 			<key>BoardSerialNumber</key>
-			<string>C02942500GULNV9JA</string>
+			<string>C02926404J9LNV9UE</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
@@ -714,7 +735,7 @@
 			<key>ChassisManufacturer</key>
 			<string></string>
 			<key>ChassisSerialNumber</key>
-			<string>C02ZKSYMJV3Q</string>
+			<string>C02YX085JV3Q</string>
 			<key>ChassisType</key>
 			<integer>9</integer>
 			<key>ChassisVersion</key>
@@ -738,9 +759,9 @@
 			<key>SystemSKUNumber</key>
 			<string>Mac-AA95B1DDAB278B95</string>
 			<key>SystemSerialNumber</key>
-			<string>C02ZKSYMJV3Q</string>
+			<string>C02YX085JV3Q</string>
 			<key>SystemUUID</key>
-			<string>F0685B1E-6699-4737-BD14-2C64207C87E9</string>
+			<string>81BC5559-5EA5-4FE8-B107-00095EE76933</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
@@ -789,23 +810,23 @@
 			<key>ClearScreenOnModeSwitch</key>
 			<true/>
 			<key>ConsoleMode</key>
-			<string></string>
-			<key>IgnoreTextInGraphics</key>
+			<string>Max</string>
+			<key>DirectGopRendering</key>
 			<false/>
-			<key>ProvideConsoleGop</key>
+			<key>IgnoreTextInGraphics</key>
 			<true/>
+			<key>ProvideConsoleGop</key>
+			<false/>
 			<key>ReconnectOnResChange</key>
 			<false/>
 			<key>ReplaceTabWithSpace</key>
-			<false/>
+			<true/>
 			<key>Resolution</key>
 			<string>Max</string>
 			<key>SanitiseClearScreen</key>
 			<true/>
-			<key>Scale</key>
-			<integer>100</integer>
 			<key>TextRenderer</key>
-			<string>BuiltinGraphics</string>
+			<string>SystemGraphics</string>
 		</dict>
 		<key>Protocols</key>
 		<dict>
@@ -820,8 +841,6 @@
 			<key>AppleSmcIo</key>
 			<true/>
 			<key>AppleUserInterfaceTheme</key>
-			<false/>
-			<key>ConsoleControl</key>
 			<false/>
 			<key>DataHub</key>
 			<false/>
@@ -838,28 +857,16 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
-			<key>ClearScreenOnModeSwitch</key>
-			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
-			<key>IgnoreTextInGraphics</key>
-			<false/>
-			<key>ProvideConsoleGop</key>
-			<false/>
-			<key>ReconnectOnResChange</key>
-			<false/>
 			<key>ReleaseUsbOwnership</key>
-			<false/>
-			<key>ReplaceTabWithSpace</key>
 			<false/>
 			<key>RequestBootVarFallback</key>
 			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
-			<key>SanitiseClearScreen</key>
-			<false/>
 			<key>UnblockFsConnect</key>
 			<false/>
 		</dict>
