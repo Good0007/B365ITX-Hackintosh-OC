@@ -37,7 +37,7 @@
 
 - Etcher烧录工具：[Etcher烧录工具](https://www.balena.io/etcher/ "Etcher烧录工具")
 
-- OCC:[oc配置可视化编辑工具](https://mackie100projects.altervista.org/download-opencore-configurator/ "OCC")
+- OCC：[OC配置可视化编辑工具](https://mackie100projects.altervista.org/download-opencore-configurator/ "OCC")
 
 ### 特别鸣谢@Xjn
 OpenCore相关知识和设置开机选择启动盘：[Xjn的博客](https://blog.xjn819.com/?p=543 "Xjn的博客")
