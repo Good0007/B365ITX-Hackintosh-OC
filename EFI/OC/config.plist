@@ -122,7 +122,7 @@
 	<dict>
 		<key>Add</key>
 		<dict>
-			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
+			<key>#PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
 				<string>WLAN</string>
@@ -308,7 +308,7 @@
 				<key>Comment</key>
 				<string>dw1820a wifi</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AirportBrcmFixup</string>
 				<key>MaxKernel</key>
@@ -324,7 +324,7 @@
 				<key>Comment</key>
 				<string>dw1820a</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BrcmFirmwareData</string>
 				<key>MaxKernel</key>
@@ -340,7 +340,7 @@
 				<key>Comment</key>
 				<string>dw1820a</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BrcmPatchRAM2</string>
 				<key>MaxKernel</key>
@@ -355,38 +355,6 @@
 				<string>BrcmBluetoothInjector.kext</string>
 				<key>Comment</key>
 				<string>dw1820a</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>USBPorts.kext</string>
-				<key>Comment</key>
-				<string></string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string></string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>USBPower.kext</string>
-				<key>Comment</key>
-				<string></string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
@@ -631,7 +599,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-v brcmfx-country=#a</string>
+				<string>-v</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -798,16 +766,16 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
+			<string>HFSPlus.efi</string>
 			<string>ApfsDriverLoader.efi</string>
 			<string>MemoryAllocation.efi</string>
-			<string>FwRuntimeServices.efi</string>
-			<string>HFSPlus.efi</string>
-			<string>AppleUsbKbDxe.efi</string>
+			<string>OpenRuntime.efi</string>
+			<string>OpenUsbKbDxe.efi</string>
 		</array>
 		<key>Audio</key>
 		<dict>
 			<key>AudioSupport</key>
-			<true/>
+			<false/>
 			<key>AudioDevice</key>
 			<string>PciRoot(0x0)/Pci(0x1f,0x3)</string>
 			<key>AudioCodec</key>
@@ -866,7 +834,7 @@
 		<key>Protocols</key>
 		<dict>
 			<key>AppleAudio</key>
-			<true/>
+			<false/>
 			<key>AppleBootPolicy</key>
 			<false/>
 			<key>AppleEvent</key>
