@@ -522,34 +522,6 @@
 				<key>Skip</key>
 				<integer>0</integer>
 			</dict>
-			<dict>
-				<key>Base</key>
-				<string></string>
-				<key>Comment</key>
-				<string>ALC-KP</string>
-				<key>Count</key>
-				<integer>1</integer>
-				<key>Enabled</key>
-				<true/>
-				<key>Find</key>
-				<data>Y29tLmFwcGxlAF9fa2VybmVsX18A</data>
-				<key>Identifier</key>
-				<string>kernel</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>Replace</key>
-				<data>bm90LmFwcGxlAF9fa2VybmVsX18A</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
 		</array>
 		<key>Quirks</key>
 		<dict>
@@ -564,6 +536,8 @@
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
+			<false/>
+			<key>DisableRtcChecksum</key>
 			<false/>
 			<key>DummyPowerManagement</key>
 			<false/>
@@ -635,6 +609,8 @@
 			<true/>
 			<key>AuthRestart</key>
 			<false/>
+			<key>BootProtect</key>
+			<string>None</string>
 			<key>ExposeSensitiveData</key>
 			<integer>11</integer>
 			<key>HaltLevel</key>
@@ -739,14 +715,14 @@
 			<key>SystemProductName</key>
 			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02XRKYKHX87</string>
+			<string>C02YX0BGHX87</string>
 			<key>SystemUUID</key>
-			<string>9D83279F-D5DD-427A-9D25-71DDAE8E60B0</string>
+			<string>8C68F6E9-99D8-4D75-AAC3-462B835885EE</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
-			<string>C02848405QXJG36AD</string>
+			<string>C02926405J9JG361H</string>
 			<key>ROM</key>
 			<data>OjP1L+4a</data>
 			<key>SpoofVendor</key>
@@ -754,9 +730,9 @@
 			<key>SystemProductName</key>
 			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02XRKYKHX87</string>
+			<string>C02YX0BGHX87</string>
 			<key>SystemUUID</key>
-			<string>9D83279F-D5DD-427A-9D25-71DDAE8E60B0</string>
+			<string>8C68F6E9-99D8-4D75-AAC3-462B835885EE</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -767,18 +743,18 @@
 			<key>FirmwareFeaturesMask</key>
 			<data>P/+f/wAAAAA=</data>
 			<key>MLB</key>
-			<string>C02848405QXJG36AD</string>
+			<string>C02926405J9JG361H</string>
 			<key>ROM</key>
 			<data>OjP1L+4a</data>
 		</dict>
 		<key>SMBIOS</key>
 		<dict>
 			<key>BIOSReleaseDate</key>
-			<string>03/07/2020</string>
+			<string>03/17/2020</string>
 			<key>BIOSVendor</key>
 			<string></string>
 			<key>BIOSVersion</key>
-			<string>1037.100.355.0.0</string>
+			<string>1037.100.359.0.0</string>
 			<key>BoardAssetTag</key>
 			<string></string>
 			<key>BoardLocationInChassis</key>
@@ -788,7 +764,7 @@
 			<key>BoardProduct</key>
 			<string>Mac-7BA5B2D9E42DDD94</string>
 			<key>BoardSerialNumber</key>
-			<string>C02848405QXJG36AD</string>
+			<string>C02926405J9JG361H</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
@@ -798,7 +774,7 @@
 			<key>ChassisManufacturer</key>
 			<string></string>
 			<key>ChassisSerialNumber</key>
-			<string>C02XRKYKHX87</string>
+			<string>C02YX0BGHX87</string>
 			<key>ChassisType</key>
 			<integer>9</integer>
 			<key>ChassisVersion</key>
@@ -822,9 +798,9 @@
 			<key>SystemSKUNumber</key>
 			<string>Mac-7BA5B2D9E42DDD94</string>
 			<key>SystemSerialNumber</key>
-			<string>C02XRKYKHX87</string>
+			<string>C02YX0BGHX87</string>
 			<key>SystemUUID</key>
-			<string>9D83279F-D5DD-427A-9D25-71DDAE8E60B0</string>
+			<string>8C68F6E9-99D8-4D75-AAC3-462B835885EE</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
@@ -839,6 +815,19 @@
 	</dict>
 	<key>UEFI</key>
 	<dict>
+		<key>APFS</key>
+		<dict>
+			<key>EnableJumpstart</key>
+			<true/>
+			<key>HideVerbose</key>
+			<true/>
+			<key>JumpstartHotPlug</key>
+			<true/>
+			<key>MinDate</key>
+			<integer>0</integer>
+			<key>MinVersion</key>
+			<integer>0</integer>
+		</dict>
 		<key>Audio</key>
 		<dict>
 			<key>AudioCodec</key>
@@ -861,7 +850,6 @@
 		<key>Drivers</key>
 		<array>
 			<string>HFSPlus.efi</string>
-			<string>ApfsDriverLoader.efi</string>
 			<string>OpenRuntime.efi</string>
 			<string>OpenUsbKbDxe.efi</string>
 		</array>
@@ -911,7 +899,7 @@
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
 		</dict>
-		<key>Protocols</key>
+		<key>ProtocolOverrides</key>
 		<dict>
 			<key>AppleAudio</key>
 			<false/>
@@ -924,6 +912,8 @@
 			<key>AppleImageConversion</key>
 			<false/>
 			<key>AppleKeyMap</key>
+			<false/>
+			<key>AppleRtcRam</key>
 			<false/>
 			<key>AppleSmcIo</key>
 			<true/>
@@ -957,6 +947,8 @@
 			<key>UnblockFsConnect</key>
 			<false/>
 		</dict>
+		<key>ReservedMemory</key>
+		<array/>
 	</dict>
 </dict>
 </plist>
