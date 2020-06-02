@@ -50,7 +50,7 @@
 				<key>Comment</key>
 				<string>Fix sleep</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
 				<string>SSDT-GPRW.aml</string>
 			</dict>
@@ -375,13 +375,13 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>BrcmPatchRAM3.kext</string>
+				<string>BrcmPatchRAM2.kext</string>
 				<key>Comment</key>
 				<string>dw1820a bt</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/BrcmPatchRAM3</string>
+				<string>Contents/MacOS/BrcmPatchRAM2</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -584,7 +584,7 @@
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
-			<integer>10</integer>
+			<integer>15</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -621,7 +621,22 @@
 			<string>Optional</string>
 		</dict>
 		<key>Tools</key>
-		<array/>
+		<array>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<false/>
+				<key>Comment</key>
+				<string>Not signed for security reasons</string>
+				<key>Enabled</key>
+				<false/>
+				<key>Name</key>
+				<string>UEFI Shell</string>
+				<key>Path</key>
+				<string>Shell.efi</string>
+			</dict>
+		</array>
 	</dict>
 	<key>NVRAM</key>
 	<dict>
@@ -637,7 +652,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>brcmfx-country=#a -v</string>
+				<string>brcmfx-country=#a -v keepsyms=1 debug=0x100</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -696,50 +711,50 @@
 		<key>DataHub</key>
 		<dict>
 			<key>BoardProduct</key>
-			<string>Mac-AA95B1DDAB278B95</string>
+			<string>Mac-7BA5B2D9E42DDD94</string>
 			<key>SystemProductName</key>
-			<string>iMac19,1</string>
+			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02YG02UJV3Q</string>
+			<string>C02YX0BGHX87</string>
 			<key>SystemUUID</key>
-			<string>89722395-7546-4D43-BE3C-F4294AC37EA2</string>
+			<string>8C68F6E9-99D8-4D75-AAC3-462B835885EE</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
-			<string>C02912701GULNV9JA</string>
+			<string>C02926405J9JG361H</string>
 			<key>ROM</key>
 			<data>OjP1L+4a</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string>iMac19,1</string>
+			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02YG02UJV3Q</string>
+			<string>C02YX0BGHX87</string>
 			<key>SystemUUID</key>
-			<string>89722395-7546-4D43-BE3C-F4294AC37EA2</string>
+			<string>8C68F6E9-99D8-4D75-AAC3-462B835885EE</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
 			<key>BID</key>
-			<string>Mac-AA95B1DDAB278B95</string>
+			<string>Mac-7BA5B2D9E42DDD94</string>
 			<key>FirmwareFeatures</key>
-			<data>dvWP/QAAAAA=</data>
+			<data>P/WP/QAAAAA=</data>
 			<key>FirmwareFeaturesMask</key>
-			<data>f//f/wAAAAA=</data>
+			<data>P/+f/wAAAAA=</data>
 			<key>MLB</key>
-			<string>C02912701GULNV9JA</string>
+			<string>C02926405J9JG361H</string>
 			<key>ROM</key>
 			<data>OjP1L+4a</data>
 		</dict>
 		<key>SMBIOS</key>
 		<dict>
 			<key>BIOSReleaseDate</key>
-			<string>12/18/2019</string>
+			<string>03/17/2020</string>
 			<key>BIOSVendor</key>
 			<string></string>
 			<key>BIOSVersion</key>
-			<string>1037.80.34.0.0</string>
+			<string>1037.100.359.0.0</string>
 			<key>BoardAssetTag</key>
 			<string></string>
 			<key>BoardLocationInChassis</key>
@@ -747,45 +762,45 @@
 			<key>BoardManufacturer</key>
 			<string></string>
 			<key>BoardProduct</key>
-			<string>Mac-AA95B1DDAB278B95</string>
+			<string>Mac-7BA5B2D9E42DDD94</string>
 			<key>BoardSerialNumber</key>
-			<string>C02912701GULNV9JA</string>
+			<string>C02926405J9JG361H</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
 			<string>1.0</string>
 			<key>ChassisAssetTag</key>
-			<string>iMac-Aluminum</string>
+			<string>iMacPro-Aluminum</string>
 			<key>ChassisManufacturer</key>
 			<string></string>
 			<key>ChassisSerialNumber</key>
-			<string>C02YG02UJV3Q</string>
+			<string>C02YX0BGHX87</string>
 			<key>ChassisType</key>
 			<integer>9</integer>
 			<key>ChassisVersion</key>
-			<string>Mac-AA95B1DDAB278B95</string>
+			<string>Mac-7BA5B2D9E42DDD94</string>
 			<key>FirmwareFeatures</key>
-			<data>dvWP/QAAAAA=</data>
+			<data>P/WP/QAAAAA=</data>
 			<key>FirmwareFeaturesMask</key>
-			<data>f//f/wAAAAA=</data>
+			<data>P/+f/wAAAAA=</data>
 			<key>MemoryFormFactor</key>
 			<integer>0</integer>
 			<key>PlatformFeature</key>
-			<integer>34</integer>
+			<integer>0</integer>
 			<key>ProcessorType</key>
-			<integer>4101</integer>
+			<integer>0</integer>
 			<key>SystemFamily</key>
-			<string>iMac</string>
+			<string>iMac Pro</string>
 			<key>SystemManufacturer</key>
 			<string></string>
 			<key>SystemProductName</key>
-			<string>iMac19,1</string>
+			<string>iMacPro1,1</string>
 			<key>SystemSKUNumber</key>
-			<string>Mac-AA95B1DDAB278B95</string>
+			<string>Mac-7BA5B2D9E42DDD94</string>
 			<key>SystemSerialNumber</key>
-			<string>C02YG02UJV3Q</string>
+			<string>C02YX0BGHX87</string>
 			<key>SystemUUID</key>
-			<string>89722395-7546-4D43-BE3C-F4294AC37EA2</string>
+			<string>8C68F6E9-99D8-4D75-AAC3-462B835885EE</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
