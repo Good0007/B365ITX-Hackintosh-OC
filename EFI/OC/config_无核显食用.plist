@@ -55,7 +55,7 @@
 				<string>SSDT-GPRW.aml</string>
 			</dict>
 		</array>
-		<key>Block</key>
+		<key>Delete</key>
 		<array/>
 		<key>Patch</key>
 		<array>
@@ -65,7 +65,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>R1BSVwI=</data>
 				<key>Limit</key>
@@ -185,13 +185,8 @@
 				<integer>11</integer>
 			</dict>
 		</dict>
-		<key>Block</key>
-		<dict>
-			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
-			<array>
-				<string>MaximumBootBeepVolume</string>
-			</array>
-		</dict>
+		<key>Delete</key>
+		<dict/>
 	</dict>
 	<key>Kernel</key>
 	<dict>
@@ -569,8 +564,6 @@
 			<string>None</string>
 			<key>HideAuxiliary</key>
 			<true/>
-			<key>HideSelf</key>
-			<true/>
 			<key>PickerAttributes</key>
 			<integer>0</integer>
 			<key>PickerAudioAssist</key>
@@ -584,11 +577,13 @@
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
-			<integer>15</integer>
+			<integer>10</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
 			<key>AppleDebug</key>
+			<false/>
+			<key>ApplePanic</key>
 			<false/>
 			<key>DisableWatchDog</key>
 			<false/>
@@ -608,6 +603,8 @@
 			<key>AllowSetDefault</key>
 			<true/>
 			<key>AuthRestart</key>
+			<false/>
+			<key>BlacklistAppleUpdate</key>
 			<false/>
 			<key>BootProtect</key>
 			<string>None</string>
@@ -659,17 +656,8 @@
 				<data>emgtSGFuczoyNTI=</data>
 			</dict>
 		</dict>
-		<key>Block</key>
-		<dict>
-			<key>4D1EDE05-38C7-4A6A-9CC6-4BCCA8B38C14</key>
-			<array>
-				<string>UIScale</string>
-			</array>
-			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
-			<array>
-				<string>boot-args</string>
-			</array>
-		</dict>
+		<key>Delete</key>
+		<dict/>
 		<key>LegacyEnable</key>
 		<false/>
 		<key>LegacyOverwrite</key>
@@ -710,8 +698,28 @@
 		<false/>
 		<key>DataHub</key>
 		<dict>
+			<key>ARTFrequency</key>
+			<integer>0</integer>
 			<key>BoardProduct</key>
 			<string>Mac-7BA5B2D9E42DDD94</string>
+			<key>BoardRevision</key>
+			<data></data>
+			<key>DevicePathsSupported</key>
+			<integer>0</integer>
+			<key>FSBFrequency</key>
+			<integer>0</integer>
+			<key>InitialTSC</key>
+			<integer>0</integer>
+			<key>PlatformName</key>
+			<string></string>
+			<key>SmcBranch</key>
+			<data></data>
+			<key>SmcPlatform</key>
+			<data></data>
+			<key>SmcRevision</key>
+			<data></data>
+			<key>StartupPowerEvents</key>
+			<integer>0</integer>
 			<key>SystemProductName</key>
 			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
@@ -721,6 +729,8 @@
 		</dict>
 		<key>Generic</key>
 		<dict>
+			<key>AdviseWindows</key>
+			<false/>
 			<key>MLB</key>
 			<string>C02926405J9JG361H</string>
 			<key>ROM</key>
@@ -746,63 +756,6 @@
 			<string>C02926405J9JG361H</string>
 			<key>ROM</key>
 			<data>OjP1L+4a</data>
-		</dict>
-		<key>SMBIOS</key>
-		<dict>
-			<key>BIOSReleaseDate</key>
-			<string>03/17/2020</string>
-			<key>BIOSVendor</key>
-			<string></string>
-			<key>BIOSVersion</key>
-			<string>1037.100.359.0.0</string>
-			<key>BoardAssetTag</key>
-			<string></string>
-			<key>BoardLocationInChassis</key>
-			<string>Part Component</string>
-			<key>BoardManufacturer</key>
-			<string></string>
-			<key>BoardProduct</key>
-			<string>Mac-7BA5B2D9E42DDD94</string>
-			<key>BoardSerialNumber</key>
-			<string>C02926405J9JG361H</string>
-			<key>BoardType</key>
-			<integer>10</integer>
-			<key>BoardVersion</key>
-			<string>1.0</string>
-			<key>ChassisAssetTag</key>
-			<string>iMacPro-Aluminum</string>
-			<key>ChassisManufacturer</key>
-			<string></string>
-			<key>ChassisSerialNumber</key>
-			<string>C02YX0BGHX87</string>
-			<key>ChassisType</key>
-			<integer>9</integer>
-			<key>ChassisVersion</key>
-			<string>Mac-7BA5B2D9E42DDD94</string>
-			<key>FirmwareFeatures</key>
-			<data>P/WP/QAAAAA=</data>
-			<key>FirmwareFeaturesMask</key>
-			<data>P/+f/wAAAAA=</data>
-			<key>MemoryFormFactor</key>
-			<integer>0</integer>
-			<key>PlatformFeature</key>
-			<integer>0</integer>
-			<key>ProcessorType</key>
-			<integer>0</integer>
-			<key>SystemFamily</key>
-			<string>iMac Pro</string>
-			<key>SystemManufacturer</key>
-			<string></string>
-			<key>SystemProductName</key>
-			<string>iMacPro1,1</string>
-			<key>SystemSKUNumber</key>
-			<string>Mac-7BA5B2D9E42DDD94</string>
-			<key>SystemSerialNumber</key>
-			<string>C02YX0BGHX87</string>
-			<key>SystemUUID</key>
-			<string>8C68F6E9-99D8-4D75-AAC3-462B835885EE</string>
-			<key>SystemVersion</key>
-			<string>1.0</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -877,10 +830,8 @@
 		<key>Output</key>
 		<dict>
 			<key>ClearScreenOnModeSwitch</key>
-			<true/>
+			<false/>
 			<key>ConsoleMode</key>
-			<string></string>
-			<key>DirectGopCacheMode</key>
 			<string></string>
 			<key>DirectGopRendering</key>
 			<true/>
@@ -934,13 +885,13 @@
 		</dict>
 		<key>Quirks</key>
 		<dict>
+			<key>DeduplicateBootOrder</key>
+			<false/>
 			<key>ExitBootServicesDelay</key>
 			<integer>0</integer>
 			<key>IgnoreInvalidFlexRatio</key>
 			<false/>
 			<key>ReleaseUsbOwnership</key>
-			<false/>
-			<key>RequestBootVarFallback</key>
 			<false/>
 			<key>RequestBootVarRouting</key>
 			<true/>
