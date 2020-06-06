@@ -25,11 +25,15 @@
 
 ### 安装和问题参考
 
-- 无核显的cpu请使用 config_iMacPro1,1.plist 进行安装
+- 配置里提供【单核显配置】、【核显+独显配置】等，请根据个人情况更名后食用，否则可能无法正常启动；
+
+- cpu有核显的务必在BOIS里设置多监视器(IGPU Multi-Monitor)为启用状态；
 
 - 默认配置加入了1820A驱动，cs2网卡的用户请自行删除1820A驱动！
 
 - 设置开机默认启动Mac： 偏好设置->启动磁盘 设置默认启动盘。
+
+- 单核显的配置不再提供hdmi输出的支持，mac上的hdmi兼容很差，而且weg官方也不再对hdmi做兼容优化了，所以请使用dp输出或者转接线（转接头/线需要主动式芯片）
  
 - 镜像下载：[黑果小兵博客镜像地址](https://blog.daliansky.net/macOS-Catalina-10.15.1-19B88-Release-version-with-Clover-5098-original-image-Double-EFI-Version.html "黑果小兵10.15.1镜像")
 
