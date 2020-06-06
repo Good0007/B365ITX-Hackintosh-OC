@@ -13,19 +13,16 @@
 - 硬盘：东芝RC500 
 - CPU风扇：AR11 银欣 
 
-### 正常功能
-机型使用 iMAC 19,1 开启了核显加速，目前已99%完美
-- 无线网卡：ok
-- 蓝牙：ok
-- R9显卡：ok
-- 核显：ok (核显加速)
-- 声卡：ok
-- 睡眠/唤醒：ok
-- CPU变频：ok
+### 已知问题
+- b365itx 无法加载AppleGUC 所以核显不能拉满1.1ghz，只能到0.35的样子(影响hevc解码能力，日常使用可忽略)
 
 ### 安装和问题参考
 
 - 配置里提供【单核显配置】、【核显+独显配置】等，请根据个人情况更名后食用，否则可能无法正常启动；
+
+- 5600xt 5700xt 如果黑屏 ，请自行加入参数 agdpmod=pikera 
+
+- 单核显的配置不再提供hdmi输出的支持，mac上intel核显hdmi兼容很差，而且weg官方也不再对hdmi做兼容优化了，所以请使用dp输出或者转接线（转接头/线需要主动式芯片）
 
 - cpu有核显的务必在BOIS里设置多监视器(IGPU Multi-Monitor)为启用状态；
 
@@ -33,8 +30,6 @@
 
 - 设置开机默认启动Mac： 偏好设置->启动磁盘 设置默认启动盘。
 
-- 单核显的配置不再提供hdmi输出的支持，mac上的hdmi兼容很差，而且weg官方也不再对hdmi做兼容优化了，所以请使用dp输出或者转接线（转接头/线需要主动式芯片）
- 
 - 镜像下载：[黑果小兵博客镜像地址](https://blog.daliansky.net/macOS-Catalina-10.15.1-19B88-Release-version-with-Clover-5098-original-image-Double-EFI-Version.html "黑果小兵10.15.1镜像")
 
 - 常见问题：[安装常见问题](https://blog.daliansky.net/Common-problems-and-solutions-in-macOS-Catalina-10.15-installation.html "安装常见问题")
