@@ -57,7 +57,7 @@
 				<key>Count</key>
 				<integer>0</integer>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Find</key>
 				<data>R1BSVwI=</data>
 				<key>Limit</key>
@@ -272,38 +272,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/IntelMausi</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>CPUFriend.kext</string>
-				<key>Comment</key>
-				<string>CPUFriend</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/CPUFriend</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>CPUFriendDataProvider.kext</string>
-				<key>Comment</key>
-				<string>CPUFriendDataProvider</string>
-				<key>Enabled</key>
-				<true/>
-				<key>ExecutablePath</key>
-				<string></string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -665,7 +633,7 @@
 			<key>ARTFrequency</key>
 			<integer>0</integer>
 			<key>BoardProduct</key>
-			<string>Mac-7BA5B2D9E42DDD94</string>
+			<string>Mac-F4208DC8</string>
 			<key>BoardRevision</key>
 			<data></data>
 			<key>DevicePathsSupported</key>
@@ -685,41 +653,100 @@
 			<key>StartupPowerEvents</key>
 			<integer>0</integer>
 			<key>SystemProductName</key>
-			<string>iMacPro1,1</string>
+			<string>MacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02YX0BGHX87</string>
+			<string>W87340WCUQ2</string>
 			<key>SystemUUID</key>
-			<string>8C68F6E9-99D8-4D75-AAC3-462B835885EE</string>
+			<string>B71306FD-0E88-46AB-8C39-B474739ABFF0</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>C02926405J9JG361H</string>
+			<string>W8733021X000T</string>
 			<key>ROM</key>
 			<data>OjP1L+4a</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string>iMacPro1,1</string>
+			<string>MacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02YX0BGHX87</string>
+			<string>W87340WCUQ2</string>
 			<key>SystemUUID</key>
-			<string>8C68F6E9-99D8-4D75-AAC3-462B835885EE</string>
+			<string>B71306FD-0E88-46AB-8C39-B474739ABFF0</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
 			<key>BID</key>
-			<string>Mac-7BA5B2D9E42DDD94</string>
+			<string>Mac-F4208DC8</string>
 			<key>FirmwareFeatures</key>
-			<data>P/WP/QAAAAA=</data>
+			<data>N/UH6QAAAAA=</data>
 			<key>FirmwareFeaturesMask</key>
-			<data>P/+f/wAAAAA=</data>
+			<data>/////wAAAAA=</data>
 			<key>MLB</key>
-			<string>C02926405J9JG361H</string>
+			<string>W8733021X000T</string>
 			<key>ROM</key>
 			<data>OjP1L+4a</data>
+		</dict>
+		<key>SMBIOS</key>
+		<dict>
+			<key>BIOSReleaseDate</key>
+			<string>07/02/07</string>
+			<key>BIOSVendor</key>
+			<string></string>
+			<key>BIOSVersion</key>
+			<string>MP11.88Z.005C.B08.0707021221</string>
+			<key>BoardAssetTag</key>
+			<string></string>
+			<key>BoardLocationInChassis</key>
+			<string>Part Component</string>
+			<key>BoardManufacturer</key>
+			<string></string>
+			<key>BoardProduct</key>
+			<string>Mac-F4208DC8</string>
+			<key>BoardSerialNumber</key>
+			<string>W8733021X000T</string>
+			<key>BoardType</key>
+			<integer>11</integer>
+			<key>BoardVersion</key>
+			<string>1.0</string>
+			<key>ChassisAssetTag</key>
+			<string>Pro-Enclosure</string>
+			<key>ChassisManufacturer</key>
+			<string></string>
+			<key>ChassisSerialNumber</key>
+			<string>W87340WCUQ2</string>
+			<key>ChassisType</key>
+			<integer>2</integer>
+			<key>ChassisVersion</key>
+			<string>Mac-F4208DC8</string>
+			<key>FirmwareFeatures</key>
+			<data>N/UH6QAAAAA=</data>
+			<key>FirmwareFeaturesMask</key>
+			<data>/////wAAAAA=</data>
+			<key>MemoryFormFactor</key>
+			<integer>0</integer>
+			<key>PlatformFeature</key>
+			<integer>65535</integer>
+			<key>ProcessorType</key>
+			<integer>0</integer>
+			<key>SmcVersion</key>
+			<data></data>
+			<key>SystemFamily</key>
+			<string>MacPro</string>
+			<key>SystemManufacturer</key>
+			<string></string>
+			<key>SystemProductName</key>
+			<string>MacPro1,1</string>
+			<key>SystemSKUNumber</key>
+			<string>Mac-F4208DC8</string>
+			<key>SystemSerialNumber</key>
+			<string>W87340WCUQ2</string>
+			<key>SystemUUID</key>
+			<string>B71306FD-0E88-46AB-8C39-B474739ABFF0</string>
+			<key>SystemVersion</key>
+			<string>1.0</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
@@ -739,7 +766,7 @@
 			<key>HideVerbose</key>
 			<true/>
 			<key>JumpstartHotPlug</key>
-			<true/>
+			<false/>
 			<key>MinDate</key>
 			<integer>0</integer>
 			<key>MinVersion</key>
