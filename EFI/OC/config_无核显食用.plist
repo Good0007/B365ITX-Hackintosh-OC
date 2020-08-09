@@ -408,7 +408,7 @@
 				<string>Contents/Info.plist</string>
 			</dict>
 		</array>
-		<key>Delete</key>
+		<key>Block</key>
 		<array/>
 		<key>Emulate</key>
 		<dict>
@@ -521,6 +521,8 @@
 			<integer>0</integer>
 			<key>DisplayLevel</key>
 			<integer>2147483650</integer>
+			<key>SerialInit</key>
+			<false/>
 			<key>SysReport</key>
 			<false/>
 			<key>Target</key>
@@ -535,8 +537,6 @@
 			<key>AllowSetDefault</key>
 			<true/>
 			<key>AuthRestart</key>
-			<false/>
-			<key>BlacklistAppleUpdate</key>
 			<false/>
 			<key>BootProtect</key>
 			<string>None</string>
@@ -586,6 +586,15 @@
 				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
 				<data>emgtSGFuczoyNTI=</data>
+				<key>SystemAudioVolume</key>
+				<data>Rg==</data>
+				<key>run-efi-updater</key>
+				<string>No</string>
+			</dict>
+			<key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
+			<dict>
+				<key>rtc-blacklist</key>
+				<data></data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -622,7 +631,7 @@
 			</array>
 		</dict>
 		<key>WriteFlash</key>
-		<false/>
+		<true/>
 	</dict>
 	<key>PlatformInfo</key>
 	<dict>
@@ -763,6 +772,8 @@
 		<dict>
 			<key>EnableJumpstart</key>
 			<true/>
+			<key>GlobalConnect</key>
+			<false/>
 			<key>HideVerbose</key>
 			<true/>
 			<key>JumpstartHotPlug</key>
@@ -841,6 +852,8 @@
 			<false/>
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
+			<key>UgaPassThrough</key>
+			<false/>
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
@@ -851,6 +864,8 @@
 			<key>AppleDebugLog</key>
 			<false/>
 			<key>AppleEvent</key>
+			<false/>
+			<key>AppleFramebufferInfo</key>
 			<false/>
 			<key>AppleImageConversion</key>
 			<false/>
