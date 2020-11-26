@@ -512,6 +512,8 @@
 			<false/>
 			<key>ExternalDiskIcons</key>
 			<true/>
+			<key>ForceSecureBootScheme</key>
+			<false/>
 			<key>IncreasePciBarSize</key>
 			<false/>
 			<key>LapicKernelPanic</key>
@@ -648,7 +650,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>brcmfx-country=#a -v keepsyms=1 debug=0x100</string>
+				<string>brcmfx-country=#a -v debug=0x100 npci=0x2000 agdpmod=pikera</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 				<key>prev-lang:kbd</key>
@@ -702,9 +704,9 @@
 			<key>AdviseWindows</key>
 			<false/>
 			<key>MLB</key>
-			<string>W8733021X000T</string>
+			<string>C02752310CDJG361F</string>
 			<key>ProcessorType</key>
-			<integer>0</integer>
+			<integer>3841</integer>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>ROM</key>
@@ -712,11 +714,11 @@
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemProductName</key>
-			<string>MacPro1,1</string>
+			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>W87340WCUQ2</string>
+			<string>C02VWJZGHX87</string>
 			<key>SystemUUID</key>
-			<string>B71306FD-0E88-46AB-8C39-B474739ABFF0</string>
+			<string>6CEB09E1-61AC-468B-AE11-CC7FDE2C7C0B</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
