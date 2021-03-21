@@ -13,8 +13,22 @@
 - 硬盘：东芝RC500 
 - CPU风扇：AR11 银欣 
 
+### 更新记录
+
+- 2020321-release-0.6.8
+
+1).更新opencore 0.6.8 release；
+
+2).已稳定支持bigsur macOS 11.x；
+
+3).更新主题样式，更新相关驱动；
+
+4).由于新版本bootstrap已被弃用，若更新后OC引导丢失，请进win|pe系统使用easyuefi或者bootice重新将引导定位至:EFI\BOOT\BOOTx64.efi。
+
+
 ### 已知问题
-- b365itx 无法加载AppleGUC 所以核显不能拉满1.1ghz，只能到0.35的样子(影响hevc解码能力，日常使用可忽略)
+
+无
 
 ### 安装和问题参考
 
